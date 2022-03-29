@@ -1,0 +1,122 @@
+
+
+<style>
+
+
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+  color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.navbar-toggler {
+  background: #fff;
+}
+
+.navbar-nav {
+  text-align: center;
+}
+
+.nav-link {
+  padding: .2rem 1rem;
+}
+
+.nav-link.active,.nav-link:focus{
+  color: #fff;
+}
+
+.navbar-toggler {
+  padding: 1px 5px;
+  font-size: 18px;
+  line-height: 0.3;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: #fff;
+}
+
+
+
+
+
+
+/* ignore the code below */
+
+
+.link-area
+{
+  position:fixed;
+  bottom:20px;
+  left:20px;  
+  padding:15px;
+  border-radius:40px;
+  background:tomato;
+}
+.link-area a
+{
+  text-decoration:none;
+  color:#fff;
+  font-size:25px;
+}
+
+
+</style>
+
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href=""><h2 style="font-weight: 800;"><span style="color: green;">The </span> LifeStyle</a></h2>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/"><h5 style="padding-top: 22px;">Home</h5></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{% url 'Customer' %}"><h5 style="padding-top: 22px;">Photography</h5></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="{% url 'Customer' %}" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <h5 style="padding-top: 22px;" >Massage</h5>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="{% url 'Customer' %}"><b>.</b> Head Massage</a></li>
+            <li><a class="dropdown-item" href="{% url 'Customer' %}"><b>.</b> Body Massage</a></li>
+    
+            <li><a class="dropdown-item" href="{% url 'Customer' %}"><b>.</b>Both</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="{% url 'Customer' %}" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <h5 style="padding-top: 22px;">Scrubbing</h5>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="{% url 'Customer' %}">Face</a></li>
+            <li><a class="dropdown-item" href="{% url 'Customer' %}">Body</a></li>
+            
+            <li><a class="dropdown-item" href="{% url 'Customer' %}">Both</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{% url 'Customer' %}"><h5 style="padding-top: 22px;">Sexting</h5></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{% url 'Customer' %}"><h5 style="padding-top: 22px;">Mating</h5></a>
+        </li>
+        
+      </ul>
+      <form class="d-flex">
+        <a href="{% url 'Customer' %}">
+        <button type="button" class="btn btn-success">Urgent Booking</button></a>
+      </form>
+    </div>
+  </div>
+</nav>
+

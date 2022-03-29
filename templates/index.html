@@ -1,0 +1,1347 @@
+
+{% extends 'base.html' %}
+
+{% load static %}
+{% block content %}
+{% include 'navbar.html' %}
+
+<style>
+	body{
+		background-color: black;
+		color: whitesmoke;
+		font-family: MS LineDraw;
+	}
+    .navbar-light .navbar-brand {
+  
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+  color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.navbar-toggler {
+  background: #fff;
+}
+
+.navbar-nav {
+  text-align: center;
+}
+
+.nav-link {
+  padding: .2rem 1rem;
+}
+
+.nav-link.active,.nav-link:focus{
+  color: #fff;
+}
+
+.navbar-toggler {
+  padding: 1px 5px;
+  font-size: 18px;
+  line-height: 0.3;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: #fff;
+}
+
+/* Counter down   */
+
+.container {
+  width: 60%;
+  margin: auto;
+}
+
+.heading {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0.rem 0;
+ 
+  font-family: "Nunito", sans-serif;
+}
+
+.counter-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.counter {
+  text-align: center;
+}
+
+.counter h3 {
+  padding: 0.5rem 0;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.counter h6 {
+  font-size: 25px;
+  padding-bottom: 1rem;
+}
+
+.icon {
+  height: 5rem;
+  width: auto;
+}
+
+/* EndCounter down   */
+
+
+
+.card{
+	border: transparent;
+}
+@import url("https://fonts.googleapis.com/css?family=Exo:500,600,700|Roboto&display=swap");
+
+
+    .navbar-light .navbar-brand {
+  color: #fff;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+  color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.navbar-toggler {
+  background: #fff;
+}
+
+.navbar-nav {
+  text-align: center;
+}
+
+.nav-link {
+  padding: .2rem 1rem;
+}
+
+.nav-link.active,.nav-link:focus{
+  color: #fff;
+}
+
+.navbar-toggler {
+  padding: 1px 5px;
+  font-size: 18px;
+  line-height: 0.3;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: #fff;
+}
+
+/* Counter down   */
+
+.container {
+  width: 60%;
+  margin: auto;
+}
+
+.heading {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0.rem 0;
+ 
+  font-family: "Nunito", sans-serif;
+}
+
+.counter-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.counter {
+  text-align: center;
+}
+
+.counter h3 {
+  padding: 0.5rem 0;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.counter h6 {
+  font-size: 25px;
+  padding-bottom: 1rem;
+}
+
+.icon {
+  height: 5rem;
+  width: auto;
+}
+
+/* EndCounter down   */
+
+
+
+.card{
+	border: transparent;
+}
+@import url("https://fonts.googleapis.com/css?family=Exo:500,600,700|Roboto&display=swap");
+
+/* move up */
+ .move-up span{
+    color: var(--midnight);
+}
+
+.move-up span:hover{
+    color: var(--white);
+    cursor: pointer;
+}
+
+/**
+* Template Name: Restaurantly - v3.7.0
+* Template URL: https://bootstrapmade.com/restaurantly-restaurant-template/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+
+
+a {
+  color: #cda45e;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #d9ba85;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif;
+  color: #cda45e;
+  
+}
+
+h5{
+	text-align: center;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+/*--------------------------------------------------------------
+# Book a table button Menu
+--------------------------------------------------------------*/
+.book-a-table-btn {
+  margin: 0 0 0 15px;
+  border: 2px solid #cda45e;
+  color: #fff;
+  border-radius: 50px;
+  padding: 8px 25px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+.book-a-table-btn:hover {
+  background: #cda45e;
+  color: #fff;
+}
+@media (max-width: 992px) {
+  .book-a-table-btn {
+    margin: 0 15px 0 0;
+    padding: 8px 20px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+*
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: 100vh;
+  background: url("{% static 'images/by1.jpg' %}") ;
+  background-size: cover;
+  position: relative;
+  padding: 0;
+}
+#hero:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#hero .container {
+  padding-top: 110px;
+}
+@media (max-width: 992px) {
+  #hero .container {
+    padding-top: 98px;
+  }
+}
+#hero h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+#hero h1 span {
+  color: #cda45e;
+}
+#hero h2 {
+  color: #eee;
+  margin-bottom: 10px 0 0 0;
+  font-size: 22px;
+}
+#hero .btns {
+  margin-top: 30px;
+}
+#hero .btn-menu, #hero .btn-book {
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 50px;
+  transition: 0.3s;
+  line-height: 1;
+  color: white;
+  border: 2px solid #cda45e;
+}
+#hero .btn-menu:hover, #hero .btn-book:hover {
+  background: #cda45e;
+  color: #fff;
+}
+#hero .btn-book {
+  margin-left: 15px;
+}
+#hero .play-btn {
+  width: 94px;
+  height: 94px;
+  background: radial-gradient(#cda45e 50%, rgba(205, 164, 94, 0.4) 52%);
+  border-radius: 50%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+#hero .play-btn::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+  z-index: 100;
+  transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+#hero .play-btn::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation: pulsate-btn 2s;
+  animation: pulsate-btn 2s;
+  -webkit-animation-direction: forwards;
+  animation-direction: forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: steps;
+  animation-timing-function: steps;
+  opacity: 1;
+  border-radius: 50%;
+  border: 5px solid rgba(205, 164, 94, 0.7);
+  top: -15%;
+  left: -15%;
+  background: rgba(198, 16, 0, 0);
+}
+#hero .play-btn:hover::after {
+  border-left: 15px solid #cda45e;
+  transform: scale(20);
+}
+#hero .play-btn:hover::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border: none;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+  z-index: 200;
+  -webkit-animation: none;
+  animation: none;
+  border-radius: 0;
+}
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+@media (max-width: 992px) {
+  #hero .play-btn {
+    margin-top: 30px;
+  }
+}
+@media (max-height: 500px) {
+  #hero {
+    height: auto;
+  }
+  #hero .container {
+    padding-top: 130px;
+    padding-bottom: 60px;
+  }
+}
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@-webkit-keyframes pulsate-btn {
+  0% {
+    transform: scale(0.6, 0.6);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 0;
+  }
+}
+
+@keyframes pulsate-btn {
+  0% {
+    transform: scale(0.6, 0.6);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 0;
+  }
+}
+
+</style>
+
+
+
+
+<!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+	<!-- Indicators/dots -->
+	<div class="carousel-indicators">
+	  <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+	  <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+	  <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+	</div>
+	
+	<!-- The slideshow/carousel -->
+	<div class="carousel-inner">
+	  <div class="carousel-item active">
+		<img src="{% static 'images/massagec.png' %}" alt="Los Angeles" class="d-block" style="height: 510px; width: 100%;">
+		<div class="carousel-caption">
+		<h3 style="font-family: poppins;">Massage</h3>
+		<p style="font-size: 25px;">Get Massage from Qualified Proffessionals</p>
+		<a href="{% url 'Customer' %}">
+			<button type="button" class="btn btn-success">Urgent Booking</button></a>
+	  
+		</div>
+	  </div>
+	  <div class="carousel-item">
+		<img src="{% static 'images/fbd1.png ' %}" alt="Chicago" class="d-block" style="height: 510px; width: 100%;">
+		<div class="carousel-caption">
+			<h3 style="font-family: poppins;">Scrubbing</h3>
+			<p style="font-size: 25px;">Best Way To Care For Your Skin  </p>
+			<a href="{% url 'Customer' %}">
+				<button type="button" class="btn btn-success">Urgent Booking</button></a>
+		</div> 
+	  </div>
+	  <div class="carousel-item">
+		<img src="{% static 'images/sexxing.png' %}" alt="New York" class="d-block" style="height: 510px; width: 100%;">
+		<div class="carousel-caption">
+			<h3 style="font-family: poppins;">Sex.. </h3>
+			<p style="font-size: 25px;">Chooce Best Partiner For You and <br> Get Satsfaction Beyond Measure</p>
+			<button type="button" class="btn btn-success">Book For Sex</button>
+		</div>  
+	  </div>
+	</div>
+	
+	<!-- Left and right controls/icons -->
+	<button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+	  <span class="carousel-control-prev-icon"></span>
+	</button>
+	<button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+	  <span class="carousel-control-next-icon"></span>
+	</button>
+  </div>
+
+ 
+  <div class="container">
+    
+     <h3 style="text-align: center; color: #d9ba85;">Happy Customers</h3>
+  
+    <div class="counter-container">
+      <div class="counter"data-aos="fade-right" data-aos-delay="300">
+        <!-- <img src="https://raw.githubusercontent.com/nemo0/animated-counter/29e12c0cb15e90c27faaef0d83fb2618126067db/icons/iconmonstr-time-19.svg" alt="timer" srcset="" class="icon"> -->
+        <h3 data-target="37492" class="count" style="color: whitesmoke;">0</h3>
+        <h6>SexxyChat Customers</h6>
+      </div>
+      <div class="counter"data-aos="fade-right" data-aos-delay="100">
+        <!-- <img src="https://raw.githubusercontent.com/nemo0/animated-counter/29e12c0cb15e90c27faaef0d83fb2618126067db/icons/iconmonstr-coffee-11.svg" alt="Coffee" srcset="" class="icon"> -->
+        <h3  data-target="13467" class="count" style="color: whitesmoke;">0</h3>
+        <h6 >Mating Clients</h6>
+      </div>
+      <!-- <div class="counter"data-aos="fade-left" data-aos-delay="400"> -->
+        <!-- <img src="https://raw.githubusercontent.com/nemo0/animated-counter/29e12c0cb15e90c27faaef0d83fb2618126067db/icons/iconmonstr-weather-112.svg" alt="night" srcset="" class="icon"> -->
+        <!-- <h3 data-target="9720" class="count" style="color: whitesmoke;">0</h3>
+        <h6 >Scrubbing Clients</h6>
+      </div> -->
+	  <div class="counter"data-aos="fade-left" data-aos-delay="200">
+        <!-- <img src="https://raw.githubusercontent.com/nemo0/animated-counter/29e12c0cb15e90c27faaef0d83fb2618126067db/icons/iconmonstr-weather-112.svg" alt="night" srcset="" class="icon"> -->
+        <h3 data-target="7725" class="count" style="color: whitesmoke;">0</h3>
+        <h6 >Massage Customers</h6>
+      </div>
+    </div>
+  </div>
+<!-- card -->
+<!-- Two carousel-item -->
+<div class="container"data-aos="zoom-in" data-aos-delay="200">
+	<div class="row">
+	  <div class="col-sm-6">
+		<div class="par">
+			<h3>Why Always The LifeStyle</h3>
+		<p>The LyfeStyle Company Limited applies experience component to ensure that all customers’ 
+			anxiety is fulfilled beyond measure. This is what has made customers to find it necessary to
+			 come back for the same services or more. </p>
+		<p>The prove we have that our services are exemplary is not only customer return ratio but also
+			 reduced clients negative reviews. That is to say most of the customers’ opinions are really encouraging. </P>
+			 <a href="{% url 'Customer' %}">
+				<button type="button" class="btn btn-success">Urgent Booking</button></a>
+	  </div>
+	</div>
+	  <div class="col-sm-6"data-aos="zoom-in" data-aos-delay="200">
+		<div class="card" style="width:500px"data-aos="zoom-in" data-aos-delay="200">
+			<img src="{% static 'images/romance1.png' %}">
+			<div class="card-img-overlay"data-aos="zoom-out" data-aos-delay="200">
+			  
+			  <h3 class="card-text" style="text-align: center; color: whitesmoke;">What a Feeling</h3>
+			  
+			</div>
+		  </div>
+	  </div>
+	</div>
+  </div>
+</div>
+  <!-- Slider Start -->
+<!-- <section class="banner">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-md-12 col-xl-7````">
+				<div class="block">
+					<div class="divider mb-3"></div>
+					<span class="text-uppercase text-sm letter-spacing ">The LyfeStyle Firm</span>
+					<h1 class="mb-3 mt-3">Your most trusted satsfaction partner</h1>
+					
+					<p class="mb-4 pr-5"><h4 style="color: green;">We Always Give The Best. Welcome.</h4></p>
+					<div class="btn-container ">
+						<a href="appoinment.html" target="_blank" class="btn btn-main-2 btn-icon btn-round-full">Book Now <i class="icofont-simple-right ml-2  "></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section> -->
+<!-- <section class="features">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="feature-block d-lg-flex">
+					<div class="feature-item mb-5 mb-lg-0">
+						<div class="feature-icon mb-4">
+							<i class="icofont-surgeon-alt"></i>
+						</div>
+						<span>24 Hours Service</span>
+						<h4 class="mb-3">Online Appoinment</h4>
+						<p class="mb-4">Get ALl time support for emergency.We have introduced the principle of family medicine.</p>
+						<a href="appoinment.html" class="btn btn-main btn-round-full">Make a appoinment</a>
+					</div>
+				
+					<div class="feature-item mb-5 mb-lg-0">
+						<div class="feature-icon mb-4">
+							<i class="icofont-ui-clock"></i>
+						</div>
+						<span>Timing schedule</span>
+						<h4 class="mb-3">Working Hours</h4>
+						<ul class="w-hours list-unstyled">
+		                    <li class="d-flex justify-content-between">Sun - Wed : <span>8:00 - 17:00</span></li>
+		                    <li class="d-flex justify-content-between">Thu - Fri : <span>9:00 - 17:00</span></li>
+		                    <li class="d-flex justify-content-between">Sat - sun : <span>10:00 - 17:00</span></li>
+		                </ul>
+					</div>
+				
+					<div class="feature-item mb-5 mb-lg-0">
+						<div class="feature-icon mb-4">
+							<i class="icofont-support"></i>
+						</div>
+						<span>Emegency Cases</span>
+						<h4 class="mb-3">1-800-700-6200</h4>
+						<p>Get ALl time support for emergency.We have introduced the principle of family medicine.Get Conneted with us for any urgency .</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section> -->
+<!-- 
+Service providers -->
+
+
+
+<section class="section about">
+	<div class="container" data-aos="zoom-in" data-aos-delay="200">
+		<div class="row align-items-center">
+			<div class="col-lg-4 col-sm-6">
+				<h3> Images Showing Some of Our Services</h3>
+				<div class="about-img"data-aos="zoom-out" data-aos-delay="200">
+					<div class="card bg-dark text-white">
+						<img src="{% static 'images/boobs1.png' %}" alt="" class="img-fluid">
+						<div class="card-img-overlay">
+						  
+						  <p class="card-text"><i>Welcome to the home of best feeling. Satifaction you recieve is beyond measure.</i></p>
+						  
+						</div>
+					  </div>
+					
+					<div class="card" style="width: 15rem;">
+						<img src="{% static 'images/massage2.png' %}" alt="" class="img-fluid">
+						<div class="card-body">
+						  <p class="card-text"><i>Our services are recognized globally as we NEVER dissappoint.</i></p>
+						</div>
+					  </div>
+					
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="about-img mt-4 mt-lg-0">
+          <img src="{% static 'images/Lv.jpg' %}" alt="" class="img-fluid">
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="about-content pl-4 mt-4 mt-lg-0">
+					<h2 class="title-color"><a href="#">About Us</h2></a>
+					
+					<p >After Studying how  ladies and gentlemen are straining to get various satisfactions like sex, massage services, photoshoots, etc. we decided to create an online platform to make life easy. </p>
+<p>We employed various machinery to make the process successful. In short, we can satisfy the needs related to leisure and body needs or link our customer with a reliable resource where need be. </p>
+<p>The LyfeStyle has a mandate of protecting the rights of both the services providers and clients more specifically when it comes to security. Nobody should lose his/her asset in the process of duty or seeking services. In case of more information contact the support team. </p>
+<p>Allow me to be thankful for existing customers and new customers to join us. Enjoy to the fullest.</p> 
+<a href="{% url 'Customer' %}">
+	<button type="button" class="btn btn-success">Urgent Booking</button></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!-- <section class="cta-section ">
+	<div class="container">
+		<div class="cta position-relative">
+			<div class="row">
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<div class="counter-stat">
+						<i class="icofont-doctor"></i>
+						<span class="h3">58</span>k
+						<p>Happy People</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<div class="counter-stat">
+						<i class="icofont-flag"></i>
+						<span class="h3">700</span>+
+						<p>Surgery Comepleted</p>
+					</div>
+				</div>
+				
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<div class="counter-stat">
+						<i class="icofont-badge"></i>
+						<span class="h3">40</span>+
+						<p>Expert Doctors</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<div class="counter-stat">
+						<i class="icofont-globe"></i>
+						<span class="h3">20</span>
+						<p>Worldwide Branch</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section> -->
+<section class="section service gray-bg">
+	<div class="container"data-aos="fade-up" data-aos-delay="200">
+		<div class="row justify-content-center">
+			<div class="col-lg-7 text-center">
+				<div class="section-title">
+					<h2>Services We Over</h2>
+					<div class="divider mx-auto my-4"></div>
+					<p>We Give You 100% Assurance that Services We Give cannot Be Compromised Whatsoever.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-4 col-md-6 col-sm-6">
+				<div class="service-item mb-4">
+					<div class="icon d-flex align-items-center">
+						<i class="icofont-laboratory text-lg"></i>
+						<h4 class="mt-3 mb-3">Massage</h4>
+					</div>
+
+					<div class="content"data-aos="zoom-out" data-aos-delay="200">
+						<img src="{% static 'images/massage11.png' %}" alt="" class="img-fluid">
+						<p class="mb-4">Body relaxation and rejuvenation is all our body requires to look younger and improve our body toning. We offer the best packages for both facial and body scrubbing..</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-md-6 col-sm-6">
+				<div class="service-item mb-4">
+					<div class="icon d-flex align-items-center">
+						<i class="icofont-heart-beat-alt text-lg"></i>
+						<h4 class="mt-3 mb-3">Photography</h4>
+					</div>
+					<div class="content"data-aos="zoom-out" data-aos-delay="200">
+						<img src="{% static 'images/photoman1.png' %}" alt="" class="img-fluid">
+						<p class="mb-4">Meet professional photographers for photo taking and editing. Quality starndards are observed always.</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-lg-4 col-md-6 col-sm-6">
+				<div class="service-item mb-4">
+					<div class="icon d-flex align-items-center">
+						<i class="icofont-tooth text-lg"></i>
+						<h4 class="mt-3 mb-3">Sexting</h4>
+					</div>
+					<div class="content"data-aos="zoom-out" data-aos-delay="200">
+						<img src="{% static 'images/sex1.png' %}" alt="" class="img-fluid">
+						<p class="mb-4">Share your intimate fantasies and talk about sex 24/7. Here you will encounter with memorable love experiences.</p>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-lg-4 col-md-6 col-sm-6">
+				<div class="service-item mb-4">
+					<div class="icon d-flex align-items-center">
+						<i class="icofont-crutch text-lg"></i>
+						<h4 class="mt-3 mb-3">Mating</h4>
+					</div>
+
+					<div class="content"data-aos="fade-left" data-aos-delay="200">
+						<img src="{% static 'images/sexing.jpg' %}" alt="" class="img-fluid">
+						<p class="mb-4">Having a healthy sex life is good for a person both emotionally and physically. When one haves an orgasm, the body feels natural high. </p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-md-6 col-sm-6">
+				<div class="service-item mb-4">
+					<div class="icon d-flex align-items-center">
+						<i class="icofont-brain-alt text-lg"></i>
+						<h4 class="mt-3 mb-3">Guidence $ Counselling</h4>
+					</div>
+					<div class="content"data-aos="fade-right" data-aos-delay="200">
+						<img src="{% static 'images/canselling1.png' %}" alt="" class="img-fluid">
+						<p class="mb-4">We value our customers well being apart from the body relaxation in the Spa we also consider their wellness and state of esteemed customers mental health issues book with us for the best Psychologist session with our team.</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-lg-4 col-md-6 col-sm-6">
+				<div class="service-item mb-4">
+					<div class="icon d-flex align-items-center">
+						<i class="icofont-dna-alt-1 text-lg"></i>
+						<h4 class="mt-3 mb-3">Road Trips</h4>
+					</div>
+					<div class="content"data-aos="zoom-out" data-aos-delay="200">
+						<img src="{% static 'images/mt1.png' %}" alt="" class="img-fluid">
+						<p class="mb-4">Experience memorable moments by booking with us for your roadtrips activities, adventure time,honeymoon vacations,organisational setups meeting.Lets make your vacations amazing with our best travel packages for both hotel bookings, travel fee, photography...... </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	
+	<!-- <div class="how-section1">
+		<div class="row">
+			<div class="col-md-6 how-img">
+				<img src="{% static 'images/sexing.jpg' %}" alt="" class="img-fluid">
+			</div>
+			<div class="col-md-6">
+				<h4>Find rewarding projects</h4>
+							<h4 class="subheading">GetLance is a great place to find more clients, and to run and grow your own freelance business.</h4>
+			<p class="text-muted">Freedom to work on ideal projects. On GetLance, you run your own business and choose your own clients and projects. Just complete your profile and we’ll highlight ideal jobs. Also search projects, and respond to client invitations.
+								Wide variety and high pay. Clients are now posting jobs in hundreds of skill categories, paying top price for great work.
+								More and more success. The greater the success you have on projects, the more likely you are to get hired by clients that use GetLance.</p>
+				</div>
+			</div>
+	</div> -->
+	
+
+	{% include 'testmonials.html' %}
+	<div class="move-up">
+		<span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
+	</div>
+
+{% include 'footer.html' %}
+{% endblock content %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
